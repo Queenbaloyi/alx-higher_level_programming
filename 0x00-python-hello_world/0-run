@@ -1,7 +1,13 @@
 #!/bin/bash
 
-if [ -f "$PYFILE" ]; then
-  python3 "$PYFILE"
-else
-  echo "File not found: $PYFILE"
+# Get the Python file name from the environment variable
+PYFILE=$1
+
+# Check if the Python file exists
+if [ ! -f "$PYFILE" ]; then
+  echo "Python file does not exist: $PYFILE"
+  exit 1
 fi
+
+# Run the Python file
+python3 "$PYFILE"
