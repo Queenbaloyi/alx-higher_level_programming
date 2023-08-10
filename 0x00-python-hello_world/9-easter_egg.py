@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-bring this in
+print("The Zen of Python, by Tim Peters")
