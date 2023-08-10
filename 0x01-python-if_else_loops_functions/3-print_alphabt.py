@@ -4,5 +4,3 @@ def print_alphabet_without_q_and_e():
   for letter in range(97, 123):
     if chr(letter) != 'q' and chr(letter) != 'e':
       print(chr(letter), end="")
-
-print_alphabet_without_q_and_e()
