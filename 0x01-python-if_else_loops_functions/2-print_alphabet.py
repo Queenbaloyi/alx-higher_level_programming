@@ -4,3 +4,6 @@
 """Print the alphabet in lowercase, not followed by a new line."""
 for alphabet_character in range(97, 123)
     print("{}".format(chr(alphabet_character)), end="")
+
+if __name__ == "__main__":
+  print_alphabet()
