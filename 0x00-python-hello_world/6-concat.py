@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-str1 = "Holberton"
-str2 = "Institute"
-str1 += " " + str2
-print("Accepted to {}!".format(str1))
+my_school1 = "Holberton"
+my_school2 = "School"
+my_school1 += " " + my_school2
+print("Welcome to {}!".format(my_school1))
