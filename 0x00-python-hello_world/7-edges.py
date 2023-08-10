@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-word equals "Holberton"
-word_first_three equals word[:Three]
-word_last_2 equals word[-2:]
-middle_word equals word[1:-1]
-print("First 3 letters: {}".format(word_first_3))
-print("Last 2 letters: {}".format(word_last_2))
-print("Middle word: {}".format(middle_word))
+my_word = "Holberton"
+first_3_letters = slice(0, 3)
+last_2_letters = slice(-2, None)
+middle_word = slice(1, -1)
+print("First 3 letters: {}".format(my_word[first_3_letters]))
+print("Last 2 letters: {}".format(my_word[last_2_letters]))
+print("Middle word: {}".format(my_word[middle_word]))
