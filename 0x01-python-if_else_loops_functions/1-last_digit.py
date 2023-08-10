@@ -9,11 +9,3 @@ elif digit == 0:
     print("0")
 else:
     print("less than 6 and not 0")
-     if digit > 5:
-        print("greater than 5")
-    elif digit == 0:
-        print("0")
-    elif number < 0:
-        print("less than 6 and negative")
-    else:
-        print("less than 6 and not 0")
