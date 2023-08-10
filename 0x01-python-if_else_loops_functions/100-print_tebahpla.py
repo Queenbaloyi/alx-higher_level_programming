@@ -1,17 +1,35 @@
-#!/usr/bin/python3
-# 100-print_tebahpla.py
+#include "lists.h"
 
-def print_tebahpla():
-  """Prints the alphabet in reverse order alternating upper- and lower-case."""
-  letters = []
-  for c in range(ord('z'), ord('a') - 1, -1):
-    if c % 2 == 0:
-      letters.append(chr(c))
-    else:
-      letters.append(chr(c + 32))
+/**
+ * insert_list_node - Inserts a number into a sorted singly-linked list.
+ * @head: A pointer the head of the linked list.
+ * @number: The number to insert.
+ *
+ * Return: If the function fails - NULL.
+ * Otherwise - a pointer to the new list_node.
+ */
+listint_t *insert_list_node(listint_t **head, int number)
+{
+	listint_t *list_node = *head, *new;
 
-  for letter in letters:
-    print(letter, end="")
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
+		return (NULL);
+	new->n = number;
 
-if __name__ == "__main__":
-  print_tebahpla()
+	if (list_node == NULL || list_node->n >= number)
+	{
+		new->next = list_node;
+		*head = new;
+		return (new);
+	}
+
+	while (list_node && list_node->next && list_node->next->n < number)
+		list_node = list_node->next;
+
+	new->next = list_node->next;
+	list_node->next = new;
+
+	return (new);
+}
+
