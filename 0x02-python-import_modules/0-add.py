@@ -1,11 +1,14 @@
 #!/usr/bin/python3
 
-def add(a, b):
+def add(x, y):
     """This function adds two numbers."""
-    return a + b
+    return x + y
 
 
 if __name__ == "__main__":
-    a = 1
-    b = 2
-    print("{} + {} = {}".format(a, b, add(a, b)))
+    """Print the sum of 1 and 2."""
+    from my_add_function import add
+
+    first_number = 1
+    second_number = 2
+    print("{} + {} = {}".format(first_number, second_number, add(first_number, second_number)))
