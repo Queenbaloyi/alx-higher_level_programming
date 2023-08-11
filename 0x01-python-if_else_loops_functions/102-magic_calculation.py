@@ -9,3 +9,4 @@ def magic_calculation(first_number, second_number, third_number):
     if third_number > second_number:
         return (first_number + second_number)
     return (first_number*second_number - third_number)
+
