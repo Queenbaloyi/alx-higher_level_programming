@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 
-print("#pythoniscool", end="")
+print("#pythoniscool", end="\n")
