@@ -5,5 +5,6 @@ if __name__ == "__main__":
     from variable_load_5 import a
 
     a = 100
-
+   """Simple variable
+"""
     print(100)
