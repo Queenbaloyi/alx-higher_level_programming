@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("#pythoniscool" + "\n")
+string = "#pythoniscool"
+print(string.encode("UTF-8"))
