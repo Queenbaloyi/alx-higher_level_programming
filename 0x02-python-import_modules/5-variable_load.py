@@ -2,6 +2,6 @@
 
 if __name__ == "__main__":
     """Print the value of variable a from variable_load_5."""
-    from variable_load_5 import b
+    from variable_load_5 import 100
 
-    print(b)
+    print(a)
