@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def retrieve_element(my_sequence, index):
+def element_at(my_list, idx):
     """Retrieve an element from a sequence."""
     if index < 0 or index >= len(my_sequence):
         return None
