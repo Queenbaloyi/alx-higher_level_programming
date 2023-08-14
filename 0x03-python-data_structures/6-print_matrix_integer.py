@@ -9,5 +9,5 @@ def print_matrix_integer(matrix=[[]]):
     # Print the matrix
     for row in matrix:
         for col in row:
-            print(f"{col:d}", end=" " if col != row[-1] else "")
+            print(f"{col:d}", end="")
         print()
