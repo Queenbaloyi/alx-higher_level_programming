@@ -11,4 +11,4 @@ def print_reversed_list_integer(my_list=list()):
 
     # Print the elements of the list in reverse order
     for i in my_list:
-        print("%d" % i)
+        print(f"{i}")
