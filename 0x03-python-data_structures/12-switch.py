@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 a = 89
 b = 10
-temp = a
+
+# Put your code here
+c = a
 a = b
-b = temp
+b = c
+
 print("a={:d} - b={:d}".format(a, b))
