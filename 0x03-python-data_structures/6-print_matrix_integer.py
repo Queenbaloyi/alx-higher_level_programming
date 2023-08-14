@@ -1,30 +1,13 @@
+#!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-def print_matrix_integer(matrix=[[]]):
-  """Prints a matrix of integers.
+    """Print a matrix of integers."""
 
-  Args:
-    matrix: The matrix to print.
+    # Check if the input is a list of lists
+    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
+        raise TypeError("matrix must be a list of lists")
 
-  Returns:
-    None.
-  """
-
-  if not matrix:
-    return
-
-  for row in matrix:
-    for col in row:
-      print("%d" % col, end=" " if col != row[-1] else "")
-    print()
-
-
-if __name__ == "__main__":
-  matrix = [
-      [1, 2, 3],
-      [4, 5, 6],
-      [7, 8, 9]
-  ]
-
-  print_matrix_integer(matrix)
-  print("--")
-  print_matrix_integer()
+    # Print the matrix
+    for row in matrix:
+        for col in row:
+            print(f"{col:d}", end=" ")
+        print()
