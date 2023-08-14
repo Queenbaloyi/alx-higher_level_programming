@@ -15,21 +15,6 @@ void print_python_list_info(PyObject *p) {
 
   for (int i = 0; i < PyList_Size(p); i++) {
     PyObject *obj = PyList_GetItem(p, i);
-    printf("Element %d: ", i);
-    switch (obj->ob_type->tp_code) {
-      case PyInt_Type:
-        printf("int: %d\n", PyInt_AsLong(obj));
-        break;
-      case PyFloat_Type:
-        printf("float: %f\n", PyFloat_AsDouble(obj));
-        break;
-      case PyUnicode_Type:
-        printf("str: %s\n", PyString_AsString(obj));
-        break;
-      default:
-        printf("Unknown type: %s\n", obj->ob_type->tp_name);
-        break;
-    }
+    printf("Element %d: %s\n", i, obj->ob_type->tp_name);
   }
 }
-
