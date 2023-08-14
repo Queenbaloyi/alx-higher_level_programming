@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-def print_reversed_list_integer(my_list=list()):
-    """Print all integers of a list in reverse order."""
+# 3-print_reversed_list_integer.py
 
-    # Check if the input is a list
-    if not isinstance(my_list, list):
-        raise TypeError("my_list must be a list")
+def print_reversed_list_integer(my_list=[]):
+    """Print all integers of a list, in reverse order."""
 
-    # Reverse the list
-    my_list.reverse()
+    if not my_list:
+        return
 
-    # Print the elements of the list in reverse order
-    for i in my_list:
-        print(str.format("{:d}", i))
+    for i in reversed(my_list):
+        print(f"{i}")
+
+
+if __name__ == "__main__":
+    my_list = [1, 2, 3, 4, 5]
+    print_reversed_list_integer(my_list)
