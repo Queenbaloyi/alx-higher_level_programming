@@ -3,6 +3,5 @@
 import add_0
 
 a = 1
-another_b = 2
-
-print(f"{a} + {another_b} = {add_0.add(a, another_b)}")
+b = 2
+print("{} + {} = {}".format(a, b, add_0.add(a, b)))
