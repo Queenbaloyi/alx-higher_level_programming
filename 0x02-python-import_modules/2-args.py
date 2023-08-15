@@ -7,16 +7,20 @@ def print_arguments():
 
   # If no arguments were passed, print a message and exit
   if num_args == 0:
+    print("Number of arguments:", num_args, ".")
     print("No arguments were passed.")
     return
 
   # Print the number of arguments
-  print("Number of arguments:", num_args)
+  print("Number of arguments:", num_args, ".")
 
   # Print the list of arguments
   print("Arguments:")
   for i in range(1, num_args + 1):
-    print(i, ":", argv[i - 1])
+    if i == 1:
+      print(f"{i} argument:", argv[i - 1])
+    else:
+      print(f"{i} arguments:", argv[i - 1])
 
 if __name__ == "__main__":
   # This line will be executed only if the program is run directly,
