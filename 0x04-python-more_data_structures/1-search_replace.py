@@ -7,6 +7,7 @@ def search_replace(my_list, search, replace):
         else:
             new_list.append(item)
     return new_list
+
 if __name__ == "__main__":
     my_list = ["apple", "banana", "cherry"]
     search = "apple"
