@@ -1,20 +1,18 @@
 #!/usr/bin/python3
-def update_dictionary(a_dictionary, key, value):
-  """Replaces or adds key/value in a dictionary.
+def simple_delete(a_dictionary, key):
+  """Deletes a key in a dictionary.
 
   Args:
     a_dictionary: a dictionary
     key: a string
-    value: any type
 
-  If a key exists in the dictionary, the value will be replaced
-  If a key doesn’t exist in the dictionary, it will be created
+  If a key doesn’t exist, the dictionary won’t change
 
   You are not allowed to import any module
   """
 
   if key in a_dictionary:
-    a_dictionary[key] = value
-  else:
-    a_dictionary[key] = value
+    del a_dictionary[key]
   return a_dictionary
+
+
