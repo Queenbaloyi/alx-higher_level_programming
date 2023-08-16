@@ -11,8 +11,3 @@ def uniq_add(my_list=[]):
         num += i
 
     return num
-
-if __name__ == "__main__":
-    my_list = [1, 1, 2, 3, 5]
-    result = uniq_add(my_list)
-    print(result)
