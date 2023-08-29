@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-class Circle:
+"""Defining a MagicClass matching exactly a bytecode provided by Holberton."""
+
+import math
+
+
+class MagicClass:
     """Represent a circle."""
 
     def __init__(self, radius=0):
@@ -8,14 +13,15 @@ class Circle:
         Arg:
             radius (float or int): The radius of the new Circle.
         """
-        self.radius = radius
+        self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
             raise TypeError("radius must be a number")
+        self.__radius = radius
 
-    def get_area(self):
+    def area(self):
         """Return the area of the Circle."""
-        return (self.radius ** 2 * math.pi)
+        return (self.__radius ** 2 * math.pi)
 
-    def get_circumference(self):
+    def circumference(self):
         """Return The circumference of the Circle."""
-        return (2 * math.pi * self.radius)
+        return (2 * math.pi * self.__radius)
