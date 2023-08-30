@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def safe_print_integer(value):
+def safe_print_integer(number):
     """Print an integer with "{:d}".format().
 
     Args:
@@ -12,7 +12,7 @@ def safe_print_integer(value):
         Otherwise - True.
     """
     try:
-        print("{:d}".format(value))
+        print("{:d}".format(number))
         return (True)
     except (TypeError, ValueError):
         return (False)
